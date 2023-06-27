@@ -4,6 +4,7 @@ const clog = (req, res, next) => {
   switch (req.method) {
     case 'GET': {
       console.info(`📗 ${fgCyan}${req.method} request to ${req.path}`);
+      console.log(req);
       break;
     }
     case 'POST': {
