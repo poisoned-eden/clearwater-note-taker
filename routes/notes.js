@@ -10,7 +10,7 @@ notes.get('/', (req, res) => {
     readFromFile('./db/db.json').then((data) => res.json(JSON.parse(data)));
 });
 
-notes.get('/:note_id', (req, res) => {
+notes.get('/:id', (req, res) => {
   const noteId = req.params.id;
   readFromFile('./db/db.json')
     .then((data) => JSON.parse(data))
@@ -22,7 +22,7 @@ notes.get('/:note_id', (req, res) => {
     });
 });
 
-notes.delete('/:note_id', (req, res) => {
+notes.delete('/:id', (req, res) => {
     const noteId = req.params.id;
     readFromFile('./db/db.json')
       .then((data) => JSON.parse(data))
