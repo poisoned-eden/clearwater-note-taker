@@ -8,7 +8,7 @@ const {
 
 notes.get('/', (req, res) => {
     readFromFile('./db/db.json').then((data) => res.json(JSON.parse(data)));
-  });
+});
 
 notes.get('/:note_id', (req, res) => {
   const noteId = req.params.note_id;
@@ -41,13 +41,12 @@ notes.delete('/:note_id', (req, res) => {
 notes.post('/', (req, res) => {
     console.log(req.body);
   
-    const { username, topic, note } = req.body;
+    const { title, text } = req.body;
   
     if (req.body) {
       const newNote = {
-        username,
-        note,
-        topic,
+        title,
+        text,
         note_id: uuidv4(),
       };
   
