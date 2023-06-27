@@ -12,6 +12,7 @@ app.use(clog); // add cLog to show me what's happening and why it's not working.
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use('/api', api);
 
 app.use(express.static('public'));
 
