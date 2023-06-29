@@ -1,7 +1,5 @@
 const express = require('express');
 const path = require('path');
-const { clog } = require('./middleware/clog');
-// const fs = require('fs');
 const api = require('./routes/index.js');
 
 const PORT = process.env.PORT || 3001;
@@ -16,7 +14,6 @@ app.use(function responseLogger(req, res, next) {
   };
   next();
 });
-app.use(clog); // add cLog to show me what's happening and why it's not working. Hopefully.
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
