@@ -21,10 +21,10 @@ Visit Clearwater Note Taker deplayed on heroku at [https://limitless-escarpment-
 5. In the list on the left, click on the note to display it
 6. Press the bin to delete
 
-![Get Started](public\assets\images\Screenshot-1.png)
-![Write the note](public\assets\images\Screenshot-2.png)
-![View notes](public\assets\images\Screenshot-3.png)
-![Delete notes](public\assets\images\Screenshot-4.png)
+![Get Started](public/assets/images/Screenshot-1.png)
+![Write the note](public/assets/images/Screenshot-2.png)
+![View notes](public/assets/images/Screenshot-3.png)
+![Delete notes](public/assets/images/Screenshot-4.png)
 
 
 ## Licence
